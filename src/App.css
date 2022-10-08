@@ -2,7 +2,7 @@
   height: 800px;
   width: 1200px;
   display: grid;
-  grid-template-rows: 300px;
+  grid-template-rows: 300px repeat;
   grid-template-columns: 400px repeat(2, 1fr);
   margin: 30px auto 30px;
   grid-gap: 20px;
@@ -17,7 +17,7 @@
   padding: 30px;
   margin: 30px auto;
   border-radius: 5px;
-  background-color: gray;
+  background-color: rgb(96, 98, 243);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -26,9 +26,13 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 40px;
-  background-color: red;
+  background-color: rgb(170, 170, 170);
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.teamCard {
+  font-weight: 600;
 }
 
 .teamCard > img {
@@ -53,5 +57,5 @@ button {
 }
 
 .counter-container>button:nth-child(1) {
-  background: rgb(79, 212, 79);
+  background: rgb(55, 184, 55);
 }
