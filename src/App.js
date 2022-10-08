@@ -13,7 +13,6 @@ class App extends React.Component {
       count: 1
     }
   }
-
   
   handlePlusClick = () => {
     if (this.state.count < 100) {

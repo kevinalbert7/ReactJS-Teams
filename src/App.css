@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-.counter-container>button {
+.counter-container > button {
   height: 30px;
   width: 50px;
 }
@@ -56,6 +56,6 @@ button {
   border-radius: 5px;
 }
 
-.counter-container>button:nth-child(1) {
+.counter-container > button:nth-child(1) {
   background: rgb(55, 184, 55);
 }
