@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.container {
+  height: 800px;
+  width: 1200px;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 400px repeat(2, 1fr);
+  margin: 30px auto;
+  grid-gap: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter-container {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 5px;
+  background-color: gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container > * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 40px;
+  background-color: red;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.teamCard > img {
+  height: 100px;
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.teamCard > p {
+  margin: 5px ;
+  text-align: center;
+}
+
+.counter-container>button {
+  height: 30px;
+  width: 50px;
+}
+
+button {
+  background: rgb(255, 6, 6);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.counter-container>button:nth-child(1) {
+  background: rgb(79, 212, 79);
 }
