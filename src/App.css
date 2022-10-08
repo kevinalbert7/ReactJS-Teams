@@ -2,7 +2,7 @@
   height: 800px;
   width: 1200px;
   display: grid;
-  grid-template-rows: 300px repeat;
+  grid-template-rows: 300px;
   grid-template-columns: 400px repeat(2, 1fr);
   margin: 30px auto 30px;
   grid-gap: 20px;
@@ -33,6 +33,7 @@
 
 .teamCard {
   font-weight: 600;
+  height: 300px;
 }
 
 .teamCard > img {
